@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CyberSchools | Empowering Your Community</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+    .bg-hero { background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); }
+    .glass { backdrop-filter: blur(10px) saturate(200%); background-color: rgba(255,255,255,0.1); }
+    .typewriter > .text { display: inline-block; border-right: 2px solid #fff; font-weight: 600; }
+  </style>
+</head>
+<body class="text-gray-100 antialiased">
+
+  <!-- NAVBAR -->
+  <nav class="fixed w-full z-50 bg-black bg-opacity-50 glass p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="#" class="text-2xl font-bold">CyberSchools</a>
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="#features" class="hover:text-indigo-400">Features</a></li>
+        <li><a href="#about" class="hover:text-indigo-400">About</a></li>
+        <li><a href="#pricing" class="hover:text-indigo-400">Pricing</a></li>
+        <li><a href="#testimonials" class="hover:text-indigo-400">Testimonials</a></li>
+        <li><a href="#contact" class="hover:text-indigo-400">Contact</a></li>
+      </ul>
+      <button id="nav-toggle" class="md:hidden focus:outline-none"><i class="fas fa-bars"></i></button>
+    </div>
+    <ul id="nav-menu" class="hidden md:hidden px-4 pt-2">
+      <li class="py-1"><a href="#features">Features</a></li>
+      <li class="py-1"><a href="#about">About</a></li>
+      <li class="py-1"><a href="#pricing">Pricing</a></li>
+      <li class="py-1"><a href="#testimonials">Testimonials</a></li>
+      <li class="py-1"><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="bg-hero h-screen flex items-center" id="home">
+    <div class="container mx-auto px-6 text-center" data-aos="fade-up">
+      <h1 class="text-4xl md:text-6xl font-bold leading-tight text-white">Empowering Schools<br>Your Cyber Safety Partner</h1>
+      <div class="mt-6 typewriter text-indigo-300 text-xl md:text-2xl">
+        <span class="text"></span>
+      </div>
+      <a href="#contact" class="mt-8 inline-block bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-3 px-8 rounded-full transition">Book a Demo</a>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features" class="py-20 bg-gray-900">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold mb-8 text-white" data-aos="fade-up">What We Offer</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="glass p-6 rounded-2xl hover:scale-105 transform transition" data-aos="zoom-in">
+          <i class="fas fa-chalkboard-teacher text-4xl mb-4 text-indigo-400"></i>
+          <h3 class="text-xl font-semibold mb-2 text-white">Interactive Workshops</h3>
+          <p class="text-gray-300">Engaging sessions for staff, students, and parents with live phishing simulations.</p>
+        </div>
+        <div class="glass p-6 rounded-2xl hover:scale-105 transform transition" data-aos="zoom-in" data-aos-delay="200">
+          <i class="fas fa-shield-alt text-4xl mb-4 text-indigo-400"></i>
+          <h3 class="text-xl font-semibold mb-2 text-white">Website Vulnerability Analysis</h3>
+          <p class="text-gray-300">Detailed scan and report of your school's website to uncover weak spots.</p>
+        </div>
+        <div class="glass p-6 rounded-2xl hover:scale-105 transform transition" data-aos="zoom-in" data-aos-delay="400">
+          <i class="fas fa-certificate text-4xl mb-4 text-indigo-400"></i>
+          <h3 class="text-xl font-semibold mb-2 text-white">CPD Certified</h3>
+          <p class="text-gray-300">Official CPD certificates provided for staff professional development.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-20">
+    <div class="container mx-auto md:flex items-center md:space-x-12">
+      <div class="md:w-1/2" data-aos="fade-right">
+        <h2 class="text-3xl font-semibold mb-4 text-gray-800">Why CyberSchools?</h2>
+        <p class="text-gray-700 mb-6">We combine real-world expertise with hands-on tools to deliver training that sticks. Our sessions are designed for maximum engagement and practical takeaways.</p>
+        <ul class="list-disc list-inside text-gray-700">
+          <li>Interactive live demos</li>
+          <li>Customizable for any school size</li>
+          <li>Aligned with PSHE &amp; KCSIE requirements</li>
+        </ul>
+      </div>
+      <div class="md:w-1/2 mt-8 md:mt-0" data-aos="fade-left">
+        <img src="/mnt/data/76bd72fa-cc5c-4f99-b771-5e87b6b33923.png" alt="Cyber Safety" class="rounded-xl shadow-xl">
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing" class="py-20 bg-gray-900">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold mb-8 text-white" data-aos="fade-up">Pricing Packages</h2>
+      <div class="grid md:grid-cols-4 gap-6">
+        <div class="glass p-6 rounded-2xl hover:scale-105 transform transition" data-aos="zoom-in">
+          <h3 class="text-xl font-semibold mb-2 text-white">Staff CPD Session</h3>
+          <p class="text-indigo-300 text-3xl font-bold mb-4">&pound;250</p>
+          <p class="text-gray-300">1-hour interactive workshop + CPD certificate.</p>
+        </div>
+        <div class="glass p-6 rounded-2xl hover:scale-105 transform transition" data-aos="zoom-in" data-aos-delay="100">
+          <h3 class="text-xl font-semibold mb-2 text-white">Student Assembly</h3>
+          <p class="text-indigo-300 text-3xl font-bold mb-4">&pound;200</p>
+          <p class="text-gray-300">1-hour engaging session for one year group.</p>
+        </div>
+        <div class="glass p-6 rounded-2xl hover:scale-105 transform transition" data-aos="zoom-in" data-aos-delay="200">
+          <h3 class="text-xl font-semibold mb-2 text-white">Half-Day Package</h3>
+          <p class="text-indigo-300 text-3xl font-bold mb-4">&pound;500</p>
+          <p class="text-gray-300">Staff session + 1–2 student groups.</p>
+        </div>
+        <div class="glass p-6 rounded-2xl hover:scale-105 transform transition" data-aos="zoom-in" data-aos-delay="300">
+          <h3 class="text-xl font-semibold mb-2 text-white">Full-Day Package</h3>
+          <p class="text-indigo-300 text-3xl font-bold mb-4">&pound;750</p>
+          <p class="text-gray-300">Staff + 3+ year groups + parent workshop.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="py-20">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold mb-8 text-gray-800" data-aos="fade-up">What Schools Say</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="glass p-6 rounded-2xl" data-aos="fade-up">
+          <i class="fas fa-quote-left text-indigo-400 text-2xl mb-4"></i>
+          <p class="text-gray-700 italic mb-4">“Insightful and engaging – our staff now feel confident spotting phishing attempts. Highly recommended!”</p>
+          <h4 class="text-white font-semibold">Sarah T., Headteacher</h4>
+          <p class="text-gray-400 text-sm">Greenwood High School</p>
+        </div>
+        <div class="glass p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="150">
+          <i class="fas fa-quote-left text-indigo-400 text-2xl mb-4"></i>
+          <p class="text-gray-700 italic mb-4">“Our students loved the interactive games and real-world demos – so relevant for today's digital world.”</p>
+          <h4 class="text-white font-semibold">Mark L., IT Coordinator</h4>
+          <p class="text-gray-400 text-sm">Riverside Academy</p>
+        </div>
+        <div class="glass p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="300">
+          <i class="fas fa-quote-left text-indigo-400 text-2xl mb-4"></i>
+          <p class="text-gray-700 italic mb-4">“Fantastic value for money – clear, practical advice that we’ve already implemented school-wide.”</p>
+          <h4 class="text-white font-semibold">Emma R., Deputy Head</h4>
+          <p class="text-gray-400 text-sm">Oakwood College</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-20 bg-gray-900">
+    <div class="container mx-auto max-w-lg text-center" data-aos="fade-up">
+      <h2 class="text-3xl font-semibold mb-6 text-white">Get In Touch</h2>
+      <form id="contact-form" class="space-y-4">
+        <input type="text" placeholder="Your Name" required class="w-full p-3 rounded-lg bg-gray-800 text-gray-100 placeholder-gray-400" />
+        <input type="email" placeholder="Your School Email" required class="w-full p-3 rounded-lg bg-gray-800 text-gray-100 placeholder-gray-400" />
+        <textarea placeholder="Your Message" rows="4" required class="w-full p-3 rounded-lg bg-gray-800 text-gray-100 placeholder-gray-400"></textarea>
+        <button type="submit" class="bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-3 px-8 rounded-full transition">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-black bg-opacity-75 py-6">
+    <div class="container mx-auto text-center text-gray-500">
+      <p>&copy; 2025 CyberSchools. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+    document.getElementById('nav-toggle').onclick = () => {
+      document.getElementById('nav-menu').classList.toggle('hidden');
+    };
+    const phrases = ["Cyber Safety for All Ages","Hands-on Cybersecurity Training","Empowering Your School Community"];
+    let idx=0,charIdx=0;
+    const textEl=document.querySelector('.typewriter .text');
+    const type=()=>{if(charIdx<=phrases[idx].length){textEl.textContent=phrases[idx].substring(0,charIdx++);setTimeout(type,100);}else{setTimeout(erase,2000);}};
+    const erase=()=>{if(charIdx>=0){textEl.textContent=phrases[idx].substring(0,charIdx--);setTimeout(erase,50);}else{idx=(idx+1)%phrases.length;setTimeout(type,500);}};
+    setTimeout(type,1000);
+    document.getElementById('contact-form').addEventListener('submit',e=>{e.preventDefault();alert('Thanks for your message! We’ll be in touch soon.');e.target.reset();});
+  </script>
+</body>
+</html>
